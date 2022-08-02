@@ -11,18 +11,18 @@
 	<input type="text" id ="output">
 	<table>
 		<tr>
-			<td><input type="button" value ="Rad" onclick="radian()"></td>
-			<td><input type="button" value ="Deg" onclick="degree()"></td>
+			
+			<td><input type="checkbox" id="checkBox" value ="Deg">Deg</td>
 			<td><input type="button" value="x!" onclick="fact()"></td>
-			<td><input type="button" value="("></td>
-			<td><input type="button" value=")"></td>
+			<td><input type="button" onclick="output.value+='(' "value="("></td>
+			<td><input type="button" onclick="output.value+=')' "value=")"></td>
 			<td><input type="button" value="%" onclick="output.value+='%'"></td>
-			<td><input type="button" value="CE" onclick="output.value+=''"></td>
+			<td><input type="button" value="AC" onclick="output.value=''"></td>
 		</tr>
 
 		<tr>
 			<td><input type="button" value ="Inv"></td>
-			<td><input type="button" value ="sin"></td>
+			<td><input type="button" value ="sin" onclick="output.value+='sin('"></td>
 			<td><input type="button" value="ln"></td>
 			<td><input type="button" value="7" onclick="output.value+='7'"></td>
 			<td><input type="button" value="8" onclick="output.value+='8'"></td>
@@ -31,8 +31,8 @@
 		</tr>
 
 		<tr>
-			<td><input type="button" value ="&#928;"></td>
-			<td><input type="button" value ="cos"></td>
+			<td><input type="button" value ="π" onclick="output.value+='π'"></td>
+			<td><input type="button" value ="cos" onclick="output.value+='cos('"></td>
 			<td><input type="button" value="log"></td>
 			<td><input type="button" value="4" onclick="output.value+='4'"></td>
 			<td><input type="button" value="5" onclick="output.value+='5'"></td>
@@ -41,8 +41,8 @@
 		</tr>
 
 		<tr>
-			<td><input type="button" value ="e"></td>
-			<td><input type="button" value ="tan"></td>
+			<td><input type="button" value ="e" onclick="output.value+='e'"></td>
+			<td><input type="button" value ="tan" onclick="output.value+='tan('"></td>
 			<td><input type="button" value="&radic;"></td>
 			<td><input type="button" value="1" onclick="output.value+='1'"></td>
 			<td><input type="button" value="2" onclick="output.value+='2'"></td>
@@ -53,10 +53,10 @@
 		<tr>
 			<td><input type="button" value ="Ans"></td>
 			<td><input type="button" value ="EXP"></td>
-			<td><input type="button" value="x^y"></td>
+			<td><input type="button" value="x^y" onclick="power()"></td>
 			<td><input type="button" value="0" onclick="output.value+='0'"></td>
 			<td><input type="button" value="." onclick="output.value+='.'"></td>
-			<td><input type="button" value="=" onclick="output.value=eval(output.value)"></td>
+			<td><input type="button" value="=" onclick="resultant()"></td>
 			<td><input type="button" value="+" onclick="output.value+='+'"></td>
 		</tr>
 	</table>
