@@ -1,0 +1,20 @@
+input {
+    height: 50px;
+    width: 50px;
+}
+#output{
+    width: 240px;
+}
+#degreeBox{
+    height: 20px;
+    width: 20px;
+}
+#container {
+    height: 350px;
+    width: 300px;
+    border: 1px solid black;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    left: 300px;
+}

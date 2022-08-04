@@ -6,12 +6,21 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 	<script src="script.js"></script>
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<input type="text" id ="output">
+	<!-- Calculator starts here -->
+	<!-- div with id container is using for border  -->
+	<div id="container"> 
+
+	<!-- div with id answerbox container is using for border  -->
+
+	<div id="answerbox"><input type="text" id ="output" ></div>
+
+	<!-- table is used for creating calculator button -->
+
 	<table>
 		<tr>
-			
 			<td><input type="checkbox" id="degreeBox" value ="Deg">Deg</td>
 			<td><input type="button" onclick="output.value+='(' "value="("></td>
 			<td><input type="button" onclick="output.value+=')' "value=")"></td>
@@ -20,7 +29,6 @@
 		</tr>
 
 		<tr>
-			
 			<td><input type="button" value ="sin" onclick="output.value+='sin('"></td>
 			<td><input type="button" value="7" onclick="output.value+='7'"></td>
 			<td><input type="button" value="8" onclick="output.value+='8'"></td>
@@ -30,34 +38,32 @@
 		</tr>
 
 		<tr>
-			
 			<td><input type="button" value ="cos" onclick="output.value+='cos('"></td>
 			<td><input type="button" value="4" onclick="output.value+='4'"></td>
 			<td><input type="button" value="5" onclick="output.value+='5'"></td>
 			<td><input type="button" value="6" onclick="output.value+='6'"></td>
 			<td><input type="button" value="*" onclick="output.value+='*'"></td>
-			
 		</tr>
 
 		<tr>
 			<td><input type="button" value ="tan" onclick="output.value+='tan('"></td>
-			
-			
-			<td><input type="button" value="1" onclick="output.value+='1'"></td>
+		    <td><input type="button" value="1" onclick="output.value+='1'"></td>
 			<td><input type="button" value="2" onclick="output.value+='2'"></td>
 			<td><input type="button" value="3" onclick="output.value+='3'"></td>
 			<td><input type="button" value="-" onclick="output.value+='-'"></td>
 		</tr>
 
 		<tr>
-			
 			<td><input type="button" value ="resin" onclick="output.value+='resin'"></td>
 			<td><input type="button" value="." onclick="output.value+='.'"></td>
 			<td><input type="button" value="=" onclick="estimate()"></td>
 			<td><input type="button" value="0" onclick="output.value+='0'"></td>
 			<td><input type="button" value="+" onclick="output.value+='+'"></td>
-			
 		</tr>
 	</table>
+</div>
+
+<!-- Calculator ends here -->
+
 </body>
 </html>
